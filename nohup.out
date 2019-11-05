@@ -1,0 +1,7 @@
+
+> pske-printer@1.0.0 start-logo-production /home/apanagio/dev/print
+> sudo -u www-data cloudcmd --columns name-size-date --root logos --port 1235 --one-panel-mode
+
+url: http://localhost:1235/
+root: logos
+update available: v9.1.5 (current: v9.1.4)
