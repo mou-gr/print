@@ -142,6 +142,11 @@ const createDoc = async function (contractActivity, wizard, jsonLookUpFolder, ty
         throw(e)
     }
 }
+const createDocRaw = function (definition) {
+    var pdfDoc = printer.createPdfKitDocument(definition)
+    pdfDoc.end()
+    return pdfDoc
+}
 
 const styles = {
     h1: {
@@ -195,4 +200,4 @@ const styles = {
     }
 }
 
-module.exports = {createDoc}
+module.exports = {createDoc, createDocRaw}
